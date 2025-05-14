@@ -33,9 +33,7 @@ The model was trained on the following features:
 ## 🛠 Tech Stack
 
 - Python
-- Flask
 - Scikit-learn / XGBoost
-- HTML/CSS (Bootstrap 4)
 - Pandas / NumPy
 
 ## 📈 Performance
