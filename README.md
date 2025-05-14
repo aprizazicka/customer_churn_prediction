@@ -4,7 +4,7 @@ This project is a machine learning application that predicts whether a customer 
 
 ## 🚀 Project Overview
 
-The app uses a trained machine learning model (e.g., XGBoost or Random Forest) served through a Flask web application. The frontend allows users to input customer data through a form, and the backend predicts churn based on the model.
+The project involves training a machine learning model (Decision Tree, XGBoost, or Random Forest) to predict customer churn. The model is trained using customer data and then saved in the .sav format for later use.
 
 ## 🧠 Model Features
 
