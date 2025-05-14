@@ -38,9 +38,9 @@ The model was trained on the following features:
 - HTML/CSS (Bootstrap 4)
 - Pandas / NumPy
 
-## 📦 Setup Instructions
+📈 Performance
+Accuracy: 94%
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/aprizazicka/churn-prediction-app.git
-   cd churn-prediction-app
+Precision: 94%
+
+Recall: 93%
