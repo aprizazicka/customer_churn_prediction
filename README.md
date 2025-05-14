@@ -38,7 +38,8 @@ The model was trained on the following features:
 - HTML/CSS (Bootstrap 4)
 - Pandas / NumPy
 
-📈 Performance
+## 📈 Performance
+
 Accuracy: 94%
 
 Precision: 94%
