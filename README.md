@@ -1,6 +1,7 @@
 # 📉 Customer Churn Prediction
 
 This project is a machine learning application that predicts whether a customer will churn (i.e., leave a service) based on their usage patterns and account details.
+🔗 The app is available at this link: https://telco-churnprediction.streamlit.app/
 
 ## 🚀 Project Overview
 
