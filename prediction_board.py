@@ -9,7 +9,7 @@ st.title("☎️ Customer Churn Prediction App")
 
 # Sidebar for user input
 st.sidebar.title("📝 Input Customer Data")
-st.sidebar.write("Masukkan data Anda untuk masing-masing fitur di bawah ini:")
+st.sidebar.write("Please enter the customer data:")
 
 def input_data_user():
     # Encode state using a simple index (you can adjust based on your training setup)
@@ -68,14 +68,14 @@ def input_data_user():
 input_features = input_data_user()
 
 # Predict
-if st.button("📈 Prediksi", use_container_width=True):
-    st.subheader("🔍 Hasil Prediksi")
+if st.button("📈 Predict", use_container_width=True):
+    st.subheader("🔍 Predict result")
 
     try:
         with open("xgb_model_smote.pkl", 'rb') as file:
             loaded_model = pickle.load(file)
 
-        with st.spinner("⏳ Memprediksi..."):
+        with st.spinner("⏳ Predicting..."):
             time.sleep(2)
             prediction = loaded_model.predict(input_features)
 
@@ -90,13 +90,13 @@ if st.button("📈 Prediksi", use_container_width=True):
                 result_html = """
                 <div style="background-color:#14532d; color:white; padding:1rem; border-radius:10px;
                             font-size:18px; font-weight:bold;">
-                    ✅ Pelanggan Diprediksi Tetap Bertahan
+                    ✅ The customer is predicted to stay
                 </div>
                 """
 
             st.markdown(result_html, unsafe_allow_html=True)
 
     except FileNotFoundError:
-        st.error("❌ Model tidak ditemukan. Pastikan file `xgb_model_smote.pkl` tersedia di direktori.")
+        st.error("❌ Model not found. Make sure the file xgb_model_smote.pkl is available in the directory.")
     except Exception as e:
-        st.error(f"❌ Terjadi error saat memuat model: {e}")
+        st.error(f"❌ An error occurred while loading the model: {e}")
