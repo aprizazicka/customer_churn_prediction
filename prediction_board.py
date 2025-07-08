@@ -5,7 +5,7 @@ import pickle
 import time
 
 # App title
-st.title("☎️ Customer Churn Prediction App")
+st.title("☎️ Churn App")
 
 # Sidebar for user input
 st.sidebar.title("📝 Input Customer Data")
